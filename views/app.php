@@ -11,7 +11,7 @@
             <?php session_unset();} ?>
 
             <div class="card card-body">
-                <form action="controllers/saveTasks.php" method="POST">
+                <form action="controller/saveTasks.php" method="POST">
                     <div class="form-label" >
                         <input type="text" name="title" class="form-control" placeholder="Task Title" autofocus>
                     </div>
@@ -43,10 +43,10 @@
                                     <td> <?php echo $row['description'] ?> </td>
                                     <td> <?php echo $row['created_at'] ?> </td>
                                     <td>
-                                        <a href="controllers/editTasks.php?id=<?php echo $row['id'] ?>" class="btn btn-secondary">
+                                        <a href="controller/editTasks.php?id=<?php echo $row['id'] ?>" class="btn btn-secondary">
                                         <i class="fa-solid fa-marker"></i>
                                         </a>
-                                        <a href="controllers/deleteTasks.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">
+                                        <a href="controller/deleteTasks.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">
                                         <i class="fa-solid fa-trash"></i>
                                         </a>
                                     </td>

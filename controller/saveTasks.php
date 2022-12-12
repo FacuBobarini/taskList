@@ -1,6 +1,6 @@
 <?php
 
-include('../models/tasks.php');
+include('../model/tasks.php');
 
 $saveTask = new Tasks();
 
